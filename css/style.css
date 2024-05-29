@@ -57,3 +57,29 @@ body{
 }
 
 
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+  #backbtn, #nextbtn {
+    margin: 15px;
+    width: 45px;
+  }
+  .gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    #backbtn, #nextbtn {
+    display: none;
+    margin: 0px;
+  }
+    .gallery-wrap {
+    display: block;
+    margin: 0% auto;
+    overflow: scroll;
+  }
+}
+
